@@ -89,11 +89,11 @@ export class WebServer {
   /**
    * Close the server connection
    */
-   public stop(): void {
-     this.server.close(() => {
-       console.log("Server Stopped");
-     });
-   }
+  public stop(): void {
+    this.server.close(() => {
+      console.log("Server Stopped");
+    });
+  }
   /**
    * Parses the requested URL and returns the filename to be served.
    * If the root URL is requested, returns "index.html".
@@ -137,8 +137,3 @@ export class WebServer {
     return file.endsWith(".js");
   }
 }
-
-// Create a new instance of the server and start it
-
-//let server: WebServer = new WebServer();
-//server.start();

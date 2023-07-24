@@ -1,7 +1,7 @@
 {
   "name": "@coswat/server",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "WebServer using Node.js to serve HTML/CSS and JavaScript locally",
   "main": "lib/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +17,12 @@
   },
   "bin": {
     "server": "./bin/server"
+  },
+  "bugs": {
+    "url": "https://github.com/coswat/web-server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coswat/web-server.git"
   }
 }
