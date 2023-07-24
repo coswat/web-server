@@ -23,8 +23,8 @@ if you installed this globally you can use it by calling the command called `ser
 port is `3000` by default
 
 ```bash
-server <port>
+wserver <port>
 ```
 
-use `npx serve` command if you install it as a dev dependency
+use `npx wserver` command if you install it as a dev dependency
 

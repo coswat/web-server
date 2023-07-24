@@ -1,6 +1,9 @@
 import http from "http";
 import fs from "fs";
 import path from "path";
+import url from "url";
+
+type UrlType = url.UrlWithParsedQuery | url.UrlWithStringQuery | url.Url;
 
 export class WebServer {
   // Content Type
@@ -26,7 +29,8 @@ export class WebServer {
     req: http.IncomingMessage,
     res: http.ServerResponse
   ): Promise<void> {
-    const fileName: string = this.getFileName(req.url);
+    let reqUrl: UrlType = url.parse(req.url || "/", true);
+    const fileName: string = this.getFileName(reqUrl.pathname);
     if (this.isHTMLFile(fileName)) {
       this.contentType = "text/html";
       await this.sendFileContents(res, fileName);
@@ -100,8 +104,8 @@ export class WebServer {
    * @param {string} url - The requested URL.
    * @returns {string} - The filename to be served.
    */
-  private getFileName(url: string | undefined): string {
-    if (typeof url === "undefined") {
+  private getFileName(url: string | undefined | null): string {
+    if (!url) {
       return "/";
     }
     if (url == "/") {

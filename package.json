@@ -20,7 +20,7 @@
     "typescript": "^5.1.6"
   },
   "bin": {
-    "server": "./bin/server"
+    "wserver": "./bin/wserver"
   },
   "bugs": {
     "url": "https://github.com/coswat/web-server/issues"
