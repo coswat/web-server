@@ -2,7 +2,7 @@ import http from "http";
 import fs from "fs";
 import path from "path";
 
-class WebServer {
+export class WebServer {
   // Content Type
   private contentType!: string;
   // Server Port
@@ -87,6 +87,14 @@ class WebServer {
     });
   }
   /**
+   * Close the server connection
+   */
+   public stop(): void {
+     this.server.close(() => {
+       console.log("Server Stopped");
+     });
+   }
+  /**
    * Parses the requested URL and returns the filename to be served.
    * If the root URL is requested, returns "index.html".
    * @param {string} url - The requested URL.
@@ -132,5 +140,5 @@ class WebServer {
 
 // Create a new instance of the server and start it
 
-let server: WebServer = new WebServer();
-server.start();
+//let server: WebServer = new WebServer();
+//server.start();
