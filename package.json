@@ -1,6 +1,6 @@
 {
   "name": "@coswat/server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "WebServer using Node.js to serve HTML/CSS and JavaScript locally",
   "main": "lib/server.js",
   "types": "./types/index.d.ts",
