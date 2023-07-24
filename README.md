@@ -13,7 +13,7 @@ npm install -g @coswat/server
 Install it as a dev dependency
 
 ```bash
-npm install -D @coswat/server
+npm install --save-dev @coswat/server
 ```
 
 ## Usage
