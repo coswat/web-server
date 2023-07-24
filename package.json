@@ -1,15 +1,15 @@
 {
-  "name": "web-server",
+  "name": "@coswat/server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.ts",
+  "main": "lib/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "ts-node ./server.ts"
+    "serve": "ts-node ./src/server.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["server", "web-server"],
+  "author": "Abhishek B | Coderswat",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.4.4",
     "ts-node": "^10.9.1",
