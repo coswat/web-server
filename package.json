@@ -1,6 +1,6 @@
 {
   "name": "@coswat/server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "WebServer using Node.js to serve HTML/CSS and JavaScript locally",
   "main": "lib/server.js",
   "types": "./types/index.d.ts",
@@ -8,7 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "ts-node ./src/runner.ts"
   },
-  "keywords": ["server", "web-server"],
+  "keywords": [
+    "server",
+    "web-server"
+  ],
   "author": "Abhishek B | Coderswat",
   "license": "MIT",
   "devDependencies": {
